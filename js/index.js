@@ -4,7 +4,7 @@ const contactAddress = document.querySelector('.address');
 
 const btnAddContact = document.querySelector('.btn-add-contact');
 
-const listContact = document.queryCommandIndeterm('.contact-list');
+const listContact = document.querySelector('.contact-list');
 
 const dataBase = window.localStorage;
 
@@ -15,5 +15,7 @@ btnAddContact.onclick = () => {
         number: contactNumber.value,
         address: contactAddress.value,
     }
-    saveContact();
+    saveContact(dataBase, contact);
 }
+
+loadContact(dataBase, listContact);
