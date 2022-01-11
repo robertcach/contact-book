@@ -1,0 +1,86 @@
+*,::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --blue-color: dodgerblue;
+    --primary-font: 'Poppins', sans-serif;
+}
+
+html {
+    font-family: var(--primary-font);
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #323237;
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+
+.container {
+    height: 100vh;
+    width: 70vw;
+    margin: 1.5rem auto;
+}
+
+.container h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+}
+
+.data-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+}
+
+.data-form input {
+    margin: .75rem 0rem;
+    line-height: 3rem;
+    background: none;
+    outline: 0;
+    border: 0;
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+
+.data-form input:focus {
+    border-bottom: 1px solid dodgerblue;
+}
+
+.data-form button {
+    margin: .75rem 0rem;
+    background-color: var(--blue-color);
+    border: 0;
+    outline: 0;
+    height: 3rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+.icon {
+    color: tomato;
+    cursor: pointer;
+}
